@@ -46,7 +46,7 @@ else()
     # Manually disable individual checks, with accompanying comment. This is waht I've seen, 
     # if it makes sense in your codebase, or if I've missed any, is up to you.
     # A good check, but disabled in THIS project because I don't want to fix it right now.
-    set(CLANG_TIDY_CHECKS "${CLANG_TIDY_CHECKS},-cppcoreguidelines-pro-bounds-pointer-arithmetic")
+    set(CLANG_TIDY_CHECKS "${CLANG_TIDY_CHECKS},-llvm-header-guard")
 
 endif()
 
